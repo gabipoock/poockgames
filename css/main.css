@@ -1,0 +1,182 @@
+@import url(_reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@600;700&display=swap');
+
+.body {
+    color: #FFFFFF;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, rgb(113, 190, 136) 0%, rgb(42, 44, 41) 25%, rgba(0, 0, 0, 0.85) 50%, rgba(1, 8, 14, 1) 75%, rgb(11, 146, 29) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .body {
+        padding: 2rem calc((100vw - 1086px)/2);
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divisor {
+    display: flex;
+    gap: 53px;
+    align-items: center;
+    margin: 88px 0px 40px;
+}
+
+.divisor__line {
+    height: 1px;
+    width: 282px;
+    background-color: #30c912;
+}
+
+.page-title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 2.5rem;
+    text-shadow: -8px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+}
+
+.page-title__emphasis {
+    color: #49e622;
+}
+
+.dashboard {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0bce1c;
+    padding: 3rem;
+    width: 100%;
+}
+
+.owl-carousel .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+    margin: 0 10px; /* Ajuste a margem conforme necessário */
+}
+
+.owl-carousel .item img {
+    box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+    width: 100%; /* Certifique-se de que as imagens se ajustem ao contêiner */
+    height: auto;
+}
+
+
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #18e834;
+   
+}
+
+.dashboard__item__name {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-shadow: -4px -1px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  1px  1px 0 #000;
+}
+
+.dashboard__item__button {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    min-width: 13rem;
+    border-radius: 1rem;
+    background-color: #2e663a;
+    text-shadow: -2px -2px 0 #000,  
+                  1px -1px 0 #000,
+                 -1px  1px 0 #000,
+                  4px  2px 0 #000;
+                  border: 2px solid black;
+}
+
+.dashboard__item__button--return {
+    background-color: #01080E;
+}
+
+.hachuras {
+    margin-top: 1.5rem;
+    margin-right: 33px;
+    align-self: flex-end;
+}
+
+#prev, #next {
+    background-color: #000000; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 0 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+#prev:hover, #next:hover {
+    background-color:  #0cf520; 
+    color: #000000;
+}
+
+#prev i, #next i {
+    margin-right: 5px; 
+}
+
+.dashboard__item__img img {
+    border: 7px solid black; /* Espessura e cor da borda */
+    padding: 5px; /* Espaçamento interno para a borda */
+}
+
+dashboard__item__img {
+    position: relative;
+}
+
+.dashboard__item__img--rented::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sombra escura */
+    z-index: 1;
+    pointer-events: none; /* Permite que clique através do overlay */
+}
+
+.dashboard__item__img img {
+    display: block; /* Remove o espaço branco abaixo das imagens */
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.dashboard__item__button {
+    position: relative;
+    z-index: 2;
+}
+
+.dashboard__item__button--return {
+    background-color: #000000; /* Cor do botão 'Devolver' */
+    color: #ffffff;
+}

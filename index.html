@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoockGames</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <img src="img/logo_poockgames.png" alt="Logo AluGames">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <h1 class="page-title">Aluguel de <span class="page-title__emphasis">boardgames</span></h1>
+        <section class="dashboard">
+            <div class="owl-carousel owl-theme">
+                <div class="item dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="img/monopoly.png" alt="Capa jogo Monopoly">
+                    </div>
+                    <p class="dashboard__item__name">Monopoly</p>
+                    <a onclick="alterarStatus(1)" href="#" class="dashboard__item__button">Alugar</a>
+                </div>
+                <div class="item dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="img/ticket_to_ride.png" alt="Capa jogo Ticket to Ride">
+                    </div>
+                    <p class="dashboard__item__name">Ticket to Ride</p>
+                    <a onclick="alterarStatus(2)" href="#" class="dashboard__item__button">Alugar</a>
+                </div>
+                <div class="item dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img dashboard__item__img--rented">
+                        <img src="img/takenoko.png" alt="Capa jogo Takenoko">
+                    </div>
+                    <p class="dashboard__item__name">Takenoko</p>
+                    <a onclick="alterarStatus(3)" href="#" class="dashboard__item__button dashboard__item__button--return">Devolver</a>
+                </div>
+                <div class="item dashboard__items__item" id="game-4">
+                    <div class="dashboard__item__img">
+                        <img src="img/detetive.png" alt="Capa jogo Detetive">
+                    </div>
+                    <p class="dashboard__item__name">Detetive</p>
+                    <a onclick="alterarStatus(4)" href="#" class="dashboard__item__button">Alugar</a>
+                </div>
+                <div class="item dashboard__items__item" id="game-5">
+                    <div class="dashboard__item__img">
+                        <img src="img/ordemparanormal.png" alt="Capa Ordem Rpg">
+                    </div>
+                    <p class="dashboard__item__name">Ordem Rpg</p>
+                    <a onclick="alterarStatus(5)" href="#" class="dashboard__item__button">Alugar</a>
+                </div>
+                <div class="item dashboard__items__item" id="game-6">
+                    <div class="dashboard__item__img">
+                        <img src="img/jogodavida.png" alt="Capa jogo da vida">
+                    </div>
+                    <p class="dashboard__item__name">Jogo da vida</p>
+                    <a onclick="alterarStatus(6)" href="#" class="dashboard__item__button">Alugar</a>
+                </div>
+                <!-- pode adicionar mais jogos aqui -->
+            </div>
+            <div class="buttons">
+                <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+                <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </section>
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+  
+</body>
+
+</html>
